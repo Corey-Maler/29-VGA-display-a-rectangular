@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Feb 07 23:27:25 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : VGA_800X600
+Top-level Entity Name : VGA_800X600
+Family : Cyclone II
+Total logic elements : 913
+    Total combinational functions : 907
+    Dedicated logic registers : 288
+Total registers : 288
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 53,248
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

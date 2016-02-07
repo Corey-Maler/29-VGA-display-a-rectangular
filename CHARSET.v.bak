@@ -1,0 +1,33 @@
+module CHARSET(ch_code, c);
+
+input ch_code;
+
+output c;
+
+reg [7:0] c[8];
+
+reg [7:0] chart[8][2];
+
+
+initial
+begin
+	chart[0][0] = 8'b00111000;
+	chart[1][0] = 8'b01000100;
+	chart[2][0] = 8'b00000100;
+	chart[3][0] = 8'b00111000;
+	chart[4][0] = 8'b01000100;
+	chart[5][0] = 8'b01000100;
+	chart[6][0] = 8'b01000101;
+	chart[7][0] = 8'b00111010;
+	
+	chart[0][1] = 8'b00000000;
+	chart[1][1] = 8'b01111110;
+	chart[2][1] = 8'b01111110;
+	chart[3][1] = 8'b01111110;
+	chart[4][1] = 8'b01111110;
+	chart[5][1] = 8'b01111110;
+	chart[6][1] = 8'b01111110;
+	chart[7][1] = 8'b00000000;
+end
+
+endmodule

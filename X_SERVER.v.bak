@@ -1,0 +1,4 @@
+module X_SERVER(clk, x, y, r, g, b);
+
+input clk;
+input reg[9:0] x, y;

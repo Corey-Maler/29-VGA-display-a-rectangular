@@ -1,0 +1,13 @@
+module RAM(clk, addr,  outp);
+
+input clk;
+
+input addr;
+
+wire [10:0] addr;
+
+reg [15:0] RM [64 * 32];
+
+assign outp = RM[addr];
+
+endmodule;

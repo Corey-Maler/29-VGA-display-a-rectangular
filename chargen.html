@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>asd</title>
+<script src="./jquery-1.12.0.min.js"></script>
+<style type="text/css">
+	.pin {
+	  border: 1px solid #aaa;
+	  width: 20px;
+	  height: 20px;
+	  display: inline-block;
+	  margin: 0 2px;
+	}
+
+	.pin.active {
+	  background: #333;
+	}
+
+	.pin:hover {
+	  background: #999;
+	}
+
+	.pin.active:hover {
+	  background: #666;
+	}
+
+	.no {
+		background: #faa;
+	}
+</style>
+</head>
+
+<body>
+<div class="code">
+	<h3 class="binary"> Binary
+		<code>100210123 </code>
+	</h3>
+	<h3 class="hex"> Hex
+		<code>100210123 </code>
+	</h3>
+</div>
+<div id="asd">
+</div>
+<button class="clear">clear</button>
+</body>
+<script type="text/javascript">
+  var $binary = $('.binary code');
+  var $hex = $('.hex code');
+
+  $binary.text('123123123');
+  var buttons = [];
+
+  var click = function() {
+  	if (!this.val) {
+  		$(this).addClass('active');
+  		this.val = 1;
+  	} else {
+ 		$(this).removeClass('active');
+  		this.val = 0;
+  	} 
+
+  	recalc();
+  }
+
+  $('.clear').on('click', function() {
+  	for (var i = 0; i < buttons.length; i ++) {
+  		$(buttons[i]).removeClass('active');
+  		buttons[i].val = 0;
+  	}
+
+  	recalc();
+  });
+
+  for (var i = 0; i < 16 * 8; i ++) {
+  	if (!(i % 8)) {
+  		$('#asd').append('<br />');
+  	}
+  	var button = $('<div>');
+  	button.addClass('pin')
+  	button.on('click', click);
+  	button.get(0).val = 0;
+  	buttons.push(button.get(0));
+  	$('#asd').append(button);
+  	if (i % 8 == 7 || i > (15 * 8 - 1)) {
+  		button.addClass('no');
+  	}
+  }
+
+  function recalc() {
+  	var str = "";
+  	for (var i = 0; i < buttons.length; i ++) {
+  		str += "" + buttons[i].val;
+  	}
+
+  	$binary.text(str);
+
+  	var hex_str = "";
+
+  	for (var i = 0; i < str.length; i += 4) {
+  		var ss = str.substr(i, 4);
+
+  		hex_str += parseInt(ss, 2).toString(16);
+  	}
+
+  	$hex.text(hex_str);
+  }
+
+</script>
+</html>

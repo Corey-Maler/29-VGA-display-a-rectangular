@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'X_SERVER:xrand|timer[14]'
+Slack : -7.591
+TNS   : -1176.314
+
+Type  : Slow Model Setup 'clk'
+Slack : -6.819
+TNS   : -924.947
+
+Type  : Slow Model Hold 'clk'
+Slack : -1.954
+TNS   : -12.418
+
+Type  : Slow Model Hold 'X_SERVER:xrand|timer[14]'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -2.567
+TNS   : -1215.319
+
+Type  : Slow Model Minimum Pulse Width 'X_SERVER:xrand|timer[14]'
+Slack : -0.742
+TNS   : -344.288
+
+Type  : Fast Model Setup 'clk'
+Slack : -2.211
+TNS   : -200.451
+
+Type  : Fast Model Setup 'X_SERVER:xrand|timer[14]'
+Slack : -1.743
+TNS   : -238.022
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.263
+TNS   : -10.702
+
+Type  : Fast Model Hold 'X_SERVER:xrand|timer[14]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.627
+TNS   : -769.886
+
+Type  : Fast Model Minimum Pulse Width 'X_SERVER:xrand|timer[14]'
+Slack : -0.500
+TNS   : -232.000
+
+------------------------------------------------------------
