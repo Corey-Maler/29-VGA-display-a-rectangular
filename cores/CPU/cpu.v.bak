@@ -1,0 +1,7 @@
+module CPU (
+	input clk,
+	input W_RST,
+	input W_CLK,
+	
+
+);

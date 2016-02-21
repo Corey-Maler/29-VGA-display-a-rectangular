@@ -1,0 +1,14 @@
+module DIGITS (
+	// wishbone
+	input W_RST,
+	input W_CLK,
+	input wire[31:0] W_ADDR,
+	input wire[31:0] W_DAT_I,
+	
+	output reg[31:0] W_DAT_O,
+	output W_ACK
+	
+	
+);
+
+endmodule

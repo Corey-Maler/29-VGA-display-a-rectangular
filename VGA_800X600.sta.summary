@@ -2,52 +2,124 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'X_SERVER:xrand|timer[14]'
-Slack : -7.591
-TNS   : -1176.314
+Type  : Slow Model Setup 'LED_CLK'
+Slack : -5.360
+TNS   : -72.702
 
 Type  : Slow Model Setup 'clk'
-Slack : -6.819
-TNS   : -924.947
+Slack : -5.322
+TNS   : -518.731
+
+Type  : Slow Model Setup 'CPU:inst1|temp[20]'
+Slack : -4.908
+TNS   : -108.339
+
+Type  : Slow Model Setup 'DELITER:inst7|sum[16]'
+Slack : -2.404
+TNS   : -83.131
+
+Type  : Slow Model Setup 'WB_CONTROLLER:inst5|t[3]'
+Slack : -1.552
+TNS   : -31.822
 
 Type  : Slow Model Hold 'clk'
-Slack : -1.954
-TNS   : -12.418
+Slack : -2.630
+TNS   : -7.396
 
-Type  : Slow Model Hold 'X_SERVER:xrand|timer[14]'
+Type  : Slow Model Hold 'DELITER:inst7|sum[16]'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CPU:inst1|temp[20]'
 Slack : 0.499
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'clk'
-Slack : -2.567
-TNS   : -1215.319
+Type  : Slow Model Hold 'LED_CLK'
+Slack : 0.499
+TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'X_SERVER:xrand|timer[14]'
+Type  : Slow Model Hold 'WB_CONTROLLER:inst5|t[3]'
+Slack : 1.161
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -2.277
+TNS   : -564.337
+
+Type  : Slow Model Minimum Pulse Width 'LED_CLK'
+Slack : -1.777
+TNS   : -38.877
+
+Type  : Slow Model Minimum Pulse Width 'DELITER:inst7|sum[16]'
 Slack : -0.742
-TNS   : -344.288
+TNS   : -69.748
+
+Type  : Slow Model Minimum Pulse Width 'CPU:inst1|temp[20]'
+Slack : -0.742
+TNS   : -47.488
+
+Type  : Slow Model Minimum Pulse Width 'WB_CONTROLLER:inst5|t[3]'
+Slack : -0.742
+TNS   : -47.488
+
+Type  : Fast Model Setup 'LED_CLK'
+Slack : -1.900
+TNS   : -10.784
 
 Type  : Fast Model Setup 'clk'
-Slack : -2.211
-TNS   : -200.451
+Slack : -1.772
+TNS   : -117.698
 
-Type  : Fast Model Setup 'X_SERVER:xrand|timer[14]'
-Slack : -1.743
-TNS   : -238.022
+Type  : Fast Model Setup 'CPU:inst1|temp[20]'
+Slack : -1.092
+TNS   : -17.693
+
+Type  : Fast Model Setup 'DELITER:inst7|sum[16]'
+Slack : -0.085
+TNS   : -1.127
+
+Type  : Fast Model Setup 'WB_CONTROLLER:inst5|t[3]'
+Slack : 0.157
+TNS   : 0.000
 
 Type  : Fast Model Hold 'clk'
-Slack : -1.263
-TNS   : -10.702
+Slack : -1.407
+TNS   : -4.170
 
-Type  : Fast Model Hold 'X_SERVER:xrand|timer[14]'
+Type  : Fast Model Hold 'DELITER:inst7|sum[16]'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CPU:inst1|temp[20]'
 Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'clk'
-Slack : -1.627
-TNS   : -769.886
+Type  : Fast Model Hold 'LED_CLK'
+Slack : 0.215
+TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'X_SERVER:xrand|timer[14]'
+Type  : Fast Model Hold 'WB_CONTROLLER:inst5|t[3]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.423
+TNS   : -354.516
+
+Type  : Fast Model Minimum Pulse Width 'LED_CLK'
+Slack : -1.222
+TNS   : -26.222
+
+Type  : Fast Model Minimum Pulse Width 'DELITER:inst7|sum[16]'
 Slack : -0.500
-TNS   : -232.000
+TNS   : -47.000
+
+Type  : Fast Model Minimum Pulse Width 'CPU:inst1|temp[20]'
+Slack : -0.500
+TNS   : -32.000
+
+Type  : Fast Model Minimum Pulse Width 'WB_CONTROLLER:inst5|t[3]'
+Slack : -0.500
+TNS   : -32.000
 
 ------------------------------------------------------------

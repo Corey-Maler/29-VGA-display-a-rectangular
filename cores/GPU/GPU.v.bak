@@ -1,0 +1,8 @@
+module (
+	input btn1,
+	input btn2,
+	input clk,
+	output DATA
+);
+
+

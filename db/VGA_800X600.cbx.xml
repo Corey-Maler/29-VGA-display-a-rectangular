@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="VGA_800X600">
-		<CBX_INST_ENTRY INSTANCE_NAME="|VGA_800X600|X_SERVER:xrand|CHARSET:charset|altsyncram:chart_rtl_0" CBX_FILE_NAME="altsyncram_st61.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|VGA_800X600|X_SERVER:xrand|V_RAM:vram|altsyncram:RAM_rtl_0" CBX_FILE_NAME="altsyncram_iel1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SoC|GPU_core:inst2|CHARSET:charset|altsyncram:chart_rtl_0" CBX_FILE_NAME="altsyncram_st61.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SoC|GPU_core:inst2|V_RAM:vram|altsyncram:RAM_rtl_0" CBX_FILE_NAME="altsyncram_fn61.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
