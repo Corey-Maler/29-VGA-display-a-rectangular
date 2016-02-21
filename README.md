@@ -56,3 +56,15 @@ ADD [a], [b], [c]; // a = b + c]
 JPMI [a]; // jump if C
 JMPZ [a]; // jump if result of last operation -- zero
 ```
+
+### Exmaple
+``` asm
+#include stdio.asm
+
+.DATA
+_STR "Wake up, Neo\b_";
+
+.PROGRAM
+push addr(_STR);
+call print;
+```
