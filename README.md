@@ -7,7 +7,7 @@
 | **`00_xxxxxx`** | Programm        | | |
 | `..0xxxx` | interrupts | | |
 | `..00000` | *reset* | | |
-| `..00001` | *timer1 | | controlled by $rt |
+| `..00001` | *timer_1* | | controlled by $rt |
 | **`01_xxxxxx`** | Registers, IO   | | |
 | `..0xxxx`  | User Registers  | $r0-$r15 | | 
 | `..10000`  | flag register   | $rf | |
@@ -19,6 +19,11 @@
 | **`10_xxxxxx`** | RAM             | | |
 | **`11_xxxxxx`** | Stack           | | |
 
+### flag register
+`
+[0] -- carry
+[1] -- does result of last operation is zero
+`
 ### Adressing:
 #### Direct:
 `$r0 - $r15` registers
@@ -31,6 +36,11 @@
 #### relative
 `+xxxx` // don't know
 
+#### constant
+* `b1100_1111` // binary
+* `o1223_3212` // octal
+* `d10` // deceminal
+* `h12` // hex
 
 ### Commands
 4 word (16 bytes).
@@ -39,4 +49,10 @@
 ```
 PUSH [a];
 POP [a];
+JMP [a];
+MOV [a], [b]; // a = b
+ADD [a], [b], [c]; // a = b + c]
+
+JPMI [a]; // jump if C
+JMPZ [a]; // jump if result of last operation -- zero
 ```
